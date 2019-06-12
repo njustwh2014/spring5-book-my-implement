@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+
+group 'cn.edu.seu.wh'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    //mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "http://maven.aliyun.com/nexus/content/groups/public/" }
+
+}
+
+dependencies {
+    compile('org.springframework:spring-context:5.1.1.RELEASE')
+}
